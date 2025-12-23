@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary-color: #2563aa;
+    --primary-color-darker: #0a305a;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open Sans';
+    font-size: 1.3em;
+    line-height: 1em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #feffff;
+    border-radius: 10px;
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form output {
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    outline: 3px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+.imc-texto,
+.Resultado {
+    font-size: 1em;
+    line-height: 25px;
+}
+
+.imc-linhas {
+    display: flex;
+    gap: 40px;
+
+}
+
+.coluna {
+    flex: 1;
+}
+
+.calculo {
+    font-size: 1.5em;
+}
+
+.resultado {
+    background: #5bd676;
+    border-radius: 6px;
+    line-height: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.resultado.baixo {
+    background-color: #ffe0e0;
+    color: #b00020;
+}
+
+.resultado.normal {
+    background-color: #e0ffe5;
+    color: #0a7a28;
+}
+
+.resultado.sobrepeso {
+    background-color: #fff4cc;
+    color: #9a6a00;
+}
+
+.resultado.obesidade {
+    background-color: #ffd6d6;
+    color: #8b0000;
+}
